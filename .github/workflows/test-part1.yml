@@ -1,4 +1,4 @@
-name: Testing FizzBuzz exercise
+name: Testing DOM exercises
 
 on:
   pull_request:
