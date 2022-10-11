@@ -57,12 +57,16 @@ HINT: You may need some global state for this problem.
 ==================== */
 
 let spanContainer = document.querySelector('#span-container');
-spanContainer.appendChild(htmlToElement('<span>0</span>'));
-
 let addSpanButton = document.getElementById("add-span-button")
+let count = 0
+
 if (addSpanButton) {
   addSpanButton.addEventListener('click', () => {
-    spanContainer.innerText++;
+    let result = count++
+    let htmlString = "<span>" + Number(result) + "</span>"
+    spanContainer.appendChild(htmlToElement(htmlString));
+
+    
   });
 }
 
