@@ -65,8 +65,7 @@ if (addSpanButton) {
     let result = count++
     let htmlString = "<span>" + Number(result) + "</span>"
     spanContainer.appendChild(htmlToElement(htmlString));
-
-    
+   
   });
 }
 
