@@ -131,4 +131,4 @@ Object.assign(window, {
   firstResult,
   secondAndThirdResults,
   allResults,
-})
+});
