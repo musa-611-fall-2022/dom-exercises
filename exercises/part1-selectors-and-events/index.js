@@ -126,3 +126,9 @@ function checkResults() {
 }
 
 checkResults();
+
+Object.assign(window, {
+  firstResult,
+  secondAndThirdResults,
+  allResults,
+})
