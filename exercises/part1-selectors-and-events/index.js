@@ -32,7 +32,7 @@ elements representing the all of the results.
 
 let allResults = document.getElementsByClassName("result");
 
-console.log(allResults)
+console.log(allResults);
 /* ====================
 Part 4: Add an event listener to the button in problem 4 that changes the
 button's own text to "I'm Clicked!"
