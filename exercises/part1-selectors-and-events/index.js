@@ -16,7 +16,8 @@ Part 1: Set the variable below equal to the paragraph element representing the
 first test result.
 ==================== */
 
-let firstResult = document.querySelector("result-1");
+let firstResult = document.getElementById("result-1");
+window.firstResult = firstResult;
 
 /* ====================
 Parts 2: Set the variable below equal to a collection of the paragraph
@@ -24,6 +25,7 @@ elements representing the 2nd and 3rd results.
 ==================== */
 
 let secondAndThirdResults = document.querySelectorAll(".result-2-3");
+window.secondAndThirdResults = secondAndThirdResults;
 
 /* ====================
 Parts 3: Set the variable below equal to a collection of the paragraph
@@ -31,6 +33,7 @@ elements representing the all of the results.
 ==================== */
 
 let allResults = document.querySelectorAll(".result");
+window.allResults = allResults;
 
 /* ====================
 Part 4: Add an event listener to the button in problem 4 that changes the
