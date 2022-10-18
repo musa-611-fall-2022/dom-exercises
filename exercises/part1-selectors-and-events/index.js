@@ -30,7 +30,7 @@ Parts 3: Set the variable below equal to a collection of the paragraph
 elements representing the all of the results.
 ==================== */
 
-let allResults = document.querySelector('.result');
+let allResults = document.querySelectorAll('.result');
 
 /* ====================
 Part 4: Add an event listener to the button in problem 4 that changes the
