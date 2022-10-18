@@ -30,7 +30,7 @@ Parts 3: Set the variable below equal to a collection of the paragraph
 elements representing the all of the results.
 ==================== */
 
-let allResults = document.querySelector('tr');
+let allResults = document.querySelector('.result');
 
 /* ====================
 Part 4: Add an event listener to the button in problem 4 that changes the
@@ -40,7 +40,7 @@ button's own text to "I'm Clicked!"
 let imClickedButton = document.querySelector('#im-clicked-button');
 if (imClickedButton) {
   imClickedButton.addEventListener('click', () => {
-    imClickedButton.innerHTML = 'I\'m Clicked!'
+    imClickedButton.innerHTML = 'I\'m Clicked!';
   });
 }
 
