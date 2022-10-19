@@ -16,7 +16,7 @@ Part 1: Set the variable below equal to the paragraph element representing the
 first test result.
 ==================== */
 
-let firstResult = document.getElementById("result-1");
+let firstResult = document.querySelector('#result-1');
 
 /* ====================npm test
 Parts 2: Set the variable below equal to a collection of the paragraph
@@ -32,7 +32,7 @@ elements representing the all of the results.
 
 let allResults = document.getElementsByClassName("result");
 
-console.log(allResults);
+// console.log(allResults);
 /* ====================
 Part 4: Add an event listener to the button in problem 4 that changes the
 button's own text to "I'm Clicked!"
@@ -132,3 +132,8 @@ function checkResults() {
 }
 
 checkResults();
+window.firstResult=firstResult;
+window.secondAndThirdResults=secondAndThirdResults;
+window.allResults=allResults;
+window.imClickedButton=imClickedButton;
+window.spanContainer=spanContainer;
