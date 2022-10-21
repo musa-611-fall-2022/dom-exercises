@@ -86,6 +86,12 @@ YOU NEED NOT (AND SHOULD NOT) EDIT BELOW THIS LINE.
 
 ===================== */
 
+Object.assign(window, {
+  firstResult,
+  secondAndThirdResults,
+  allResults,
+});
+
 function checkResults() {
   // Part 1
   try {
