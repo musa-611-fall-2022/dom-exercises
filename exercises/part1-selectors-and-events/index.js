@@ -16,32 +16,32 @@ Part 1: Set the variable below equal to the paragraph element representing the
 first test result.
 ==================== */
 
-let firstResult;
+let firstResult = document.getElementsByClassName('result');
 
 /* ====================
 Parts 2: Set the variable below equal to a collection of the paragraph
 elements representing the 2nd and 3rd results.
 ==================== */
 
-let secondAndThirdResults;
+let secondAndThirdResults = document.getElementsByClassName('result result 2-3');
 
 /* ====================
 Parts 3: Set the variable below equal to a collection of the paragraph
 elements representing the all of the results.
 ==================== */
 
-let allResults;
+let allResults = getElementsByClassName('problems');
 
 /* ====================
 Part 4: Add an event listener to the button in problem 4 that changes the
 button's own text to "I'm Clicked!"
 ==================== */
 
-let imClickedButton;
+let imClickedButton = document.getElementsById("im-clicked-button");
 if (imClickedButton) {
-  imClickedButton.addEventListener('click', () => {});
+  imClickedButton.addEventListener('click', console.log("button pushed"));
 }
-
+//() => {imClickedButton.innerHTML="Success!"}
 /* ====================
 Part 5: Add an event listener to the button in problem 5 that creates a new span
 to the spanContainer. The span should contain a single number representing how
