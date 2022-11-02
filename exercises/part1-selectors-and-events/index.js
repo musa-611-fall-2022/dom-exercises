@@ -17,28 +17,28 @@ first test result.
 ==================== */
 
 let firstResult=document.querySelector('#result-1');
-window.firstResult=firstResult;
+
 /* ====================
 Parts 2: Set the variable below equal to a collection of the paragraph
 elements representing the 2nd and 3rd results.
 ==================== */
 
 let secondAndThirdResults=document.querySelectorAll('p.result-2-3');
-window.secondAndThirdResults=secondAndThirdResults;
+
 /* ====================
 Parts 3: Set the variable below equal to a collection of the paragraph
 elements representing the all of the results.
 ==================== */
 
 let allResults=document.querySelectorAll('p.result');
-window.allResults=allResults;
+
 /* ====================
 Part 4: Add an event listener to the button in problem 4 that changes the
 button's own text to "I'm Clicked!"
 ==================== */
 
 let imClickedButton=document.getElementById("im-clicked-button");
-window.imClickedButton=imClickedButton;
+
 if (imClickedButton) {
   //imClickedButton.addEventListener('click', () => {});
   imClickedButton.addEventListener('click', ()=>{
@@ -136,3 +136,4 @@ function checkResults() {
 }
 
 checkResults();
+window.firstResult=firstResult;
