@@ -16,30 +16,33 @@ Part 1: Set the variable below equal to the paragraph element representing the
 first test result.
 ==================== */
 
-let firstResult;
+let firstResult=document.querySelector('#result-1');
 
 /* ====================
 Parts 2: Set the variable below equal to a collection of the paragraph
 elements representing the 2nd and 3rd results.
 ==================== */
 
-let secondAndThirdResults;
+let secondAndThirdResults=document.querySelectorAll('p.result-2-3');
 
 /* ====================
 Parts 3: Set the variable below equal to a collection of the paragraph
 elements representing the all of the results.
 ==================== */
 
-let allResults;
+let allResults=document.querySelectorAll('p.result');
 
 /* ====================
 Part 4: Add an event listener to the button in problem 4 that changes the
 button's own text to "I'm Clicked!"
 ==================== */
 
-let imClickedButton;
+let imClickedButton=document.querySelector('#im-clicked-button');
 if (imClickedButton) {
-  imClickedButton.addEventListener('click', () => {});
+  //imClickedButton.addEventListener('click', () => {});
+  imClickedButton.addEventListener('click',()=>{
+    imClickedButton.textContent = "I\'m Clicked!";
+});
 }
 
 /* ====================
@@ -55,10 +58,15 @@ HINT: You may need some global state for this problem.
 
 let spanContainer = document.querySelector('#span-container');
 spanContainer.appendChild(htmlToElement('<span>0</span>'));
-
-let addSpanButton;
+let num=0;
+let addSpanButton=document.querySelector('#add-span-button');
 if (addSpanButton) {
-  addSpanButton.addEventListener('click', () => {});
+  addSpanButton.addEventListener('click', () => {
+    num++;
+    let times = `<span>${num}</span>`;
+    spanContainer.appendChild(htmlToElement(times));
+
+  });
 }
 
 /* =====================
