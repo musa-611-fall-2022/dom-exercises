@@ -23,7 +23,7 @@ Parts 2: Set the variable below equal to a collection of the paragraph
 elements representing the 2nd and 3rd results.
 ==================== */
 
-let secondAndThirdResults = document.querySelectorAll('.result-2-3')
+let secondAndThirdResults = document.querySelectorAll('.result-2-3');
 for (let i=0; i < secondAndThirdResults.length; i++);
 
 /* ====================
@@ -31,7 +31,7 @@ Parts 3: Set the variable below equal to a collection of the paragraph
 elements representing the all of the results.
 ==================== */
 
-let allResults = document.querySelectorAll('.result')
+let allResults = document.querySelectorAll('.result');
 for (let i=0; i < secondAndThirdResults.length; i++);
 
 /* ====================
@@ -62,7 +62,7 @@ spanContainer.appendChild(htmlToElement('<span>0</span>'));
 
 let addSpanButton = document.getElementById("add-span-button");
 let n = 0;
-if (addSpanButton) { 
+if (addSpanButton) {
   addSpanButton.addEventListener('click', () => {
     n=n+1;
     spanContainer.appendChild(htmlToElement("<span>"+n+"</span>"));
