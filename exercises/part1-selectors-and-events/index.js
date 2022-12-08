@@ -17,6 +17,9 @@ first test result.
 ==================== */
 
 let firstResult;
+let firstResult = document.querySelector('problems')
+const(firstResult)
+
 
 /* ====================
 Parts 2: Set the variable below equal to a collection of the paragraph
@@ -39,7 +42,7 @@ button's own text to "I'm Clicked!"
 
 let imClickedButton;
 if (imClickedButton) {
-  imClickedButton.addEventListener('click', () => {});
+  imClickedButton.addEventListener('click', () => { });
 }
 
 /* ====================
@@ -58,7 +61,7 @@ spanContainer.appendChild(htmlToElement('<span>0</span>'));
 
 let addSpanButton;
 if (addSpanButton) {
-  addSpanButton.addEventListener('click', () => {});
+  addSpanButton.addEventListener('click', () => { });
 }
 
 /* =====================
@@ -113,7 +116,7 @@ function checkResults() {
   // Part 5
   spanContainer.addEventListener('DOMNodeInserted', () => {
     if (spanContainer.children.length === 6
-        && spanContainer.lastChild.textContent === '5') {
+      && spanContainer.lastChild.textContent === '5') {
       document.querySelector('#result-5').textContent = 'Success!';
     }
   });
