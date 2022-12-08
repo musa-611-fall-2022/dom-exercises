@@ -16,34 +16,40 @@ Part 1: Set the variable below equal to the paragraph element representing the
 first test result.
 ==================== */
 
-let firstResult;
-let firstResult = document.querySelector('problems')
-const(firstResult)
-
+let firstResult = document.querySelector('p');
+console.log(firstResult);
 
 /* ====================
 Parts 2: Set the variable below equal to a collection of the paragraph
 elements representing the 2nd and 3rd results.
 ==================== */
 
-let secondAndThirdResults;
+let secondAndThirdResults = document.getElementsByClassName('result result-2-3');
+console.log(secondAndThirdResults);
 
 /* ====================
 Parts 3: Set the variable below equal to a collection of the paragraph
 elements representing the all of the results.
 ==================== */
 
-let allResults;
+let allResults = document.getElementsByTagName('p');
+for (let i = 0; i < allResults.length; i++) {
+  console.log(allResults[i]);
+}
 
 /* ====================
 Part 4: Add an event listener to the button in problem 4 that changes the
 button's own text to "I'm Clicked!"
 ==================== */
+let imClickedButton = document.getElementById('im-clicked-button');
 
-let imClickedButton;
-if (imClickedButton) {
-  imClickedButton.addEventListener('click', () => { });
+function function1() {
+  imClickedButton.innerHTML = "I'm Clicked!";
 }
+
+imClickedButton.addEventListener("click", function1);
+
+
 
 /* ====================
 Part 5: Add an event listener to the button in problem 5 that creates a new span
@@ -56,13 +62,20 @@ clicking the button, you should add:
 HINT: You may need some global state for this problem.
 ==================== */
 
-let spanContainer = document.querySelector('#span-container');
-spanContainer.appendChild(htmlToElement('<span>0</span>'));
 
-let addSpanButton;
-if (addSpanButton) {
-  addSpanButton.addEventListener('click', () => { });
+let addSpanButton = document.getElementById("add-span-button");
+let spanContainer = document.getElementById("span-container");
+spanContainer.appendChild(htmlToElement(`<span>0</span>`))
+
+let i = 0;
+function function3() {
+  i++;
+  spanContainer.appendChild(htmlToElement(`<span>${i}</span>`));
 }
+
+
+addSpanButton.addEventListener("click", function3);
+
 
 /* =====================
 
