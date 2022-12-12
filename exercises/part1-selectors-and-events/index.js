@@ -62,7 +62,7 @@ let addSpanButton=document.getElementById("add-span-button");
 let n=0;
 if (addSpanButton) {
   addSpanButton.addEventListener('click', () => {
-    n=n+1;
+    n++;
     addSpanButton.appendChild(htmlToElement(`<span>${n}</span>`));
   });
 }
