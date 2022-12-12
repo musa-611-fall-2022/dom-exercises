@@ -16,7 +16,7 @@ Part 1: Set the variable below equal to the paragraph element representing the
 first test result.
 ==================== */
 
-let firstResult=document.getElementById("result-1"); 
+let firstResult=document.getElementById("result-1");
 
 /* ====================
 Parts 2: Set the variable below equal to a collection of the paragraph
@@ -63,7 +63,7 @@ let n=0;
 if (addSpanButton) {
   addSpanButton.addEventListener('click', () => {
     n=n+1;
-    addSpanButton.appendChild(htmlToElement(`<span>${times}</span>`))
+    addSpanButton.appendChild(htmlToElement(`<span>${n}</span>`));
   });
 }
 
