@@ -23,7 +23,7 @@ Parts 2: Set the variable below equal to a collection of the paragraph
 elements representing the 2nd and 3rd results.
 ==================== */
 
-let secondAndThirdResults = document.getElementsByClassName("result-2-3");
+let secondAndThirdResults = document.getElementsByClassName("result result-2-3");
 
 /* ====================
 Parts 3: Set the variable below equal to a collection of the paragraph
@@ -64,8 +64,8 @@ let times = 0;
 if (addSpanButton) {
   addSpanButton.addEventListener('click', () => {
     times += 1;
-    const span = `<span>${times}</span>`;
-    spanContainer.appendChild(htmlToElement(span));
+    const show = `<span>${times}</span>`;
+    spanContainer.appendChild(htmlToElement(show));
   });
 }
 
