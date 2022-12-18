@@ -61,7 +61,7 @@ HINT: You may need some global state for this problem.
 let spanContainer = document.querySelector('#span-container');
 spanContainer.appendChild(htmlToElement('<span>0</span>'));
 
-let click = 0
+let click = 0;
 
 let addSpanButton = document.getElementById("add-span-button");
 if (addSpanButton) {
@@ -69,7 +69,7 @@ if (addSpanButton) {
 
     click += 1;
     const clicked = `<span>${click}</span>`;
-    spanContainer.appendChild(htmlToElement(clicked))
+    spanContainer.appendChild(htmlToElement(clicked));
 
   });
 }
