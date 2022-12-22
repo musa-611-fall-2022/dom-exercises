@@ -42,7 +42,7 @@ if (imClickedButton) {
   imClickedButton.addEventListener('click', () => {
     console.log("button pushed");
     const buttonText = document.getElementById('im-clicked-button');
-    buttonText.textContent = 'I\'m Clicked!'
+    buttonText.textContent = 'I\'m Clicked!';
   });
 }
 //() => {imClickedButton.innerHTML="Success!"}
