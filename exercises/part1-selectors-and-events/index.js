@@ -16,32 +16,36 @@ Part 1: Set the variable below equal to the paragraph element representing the
 first test result.
 ==================== */
 
-let firstResult;
+let firstResult = document.getElementById('result-1');
 
 /* ====================
 Parts 2: Set the variable below equal to a collection of the paragraph
 elements representing the 2nd and 3rd results.
 ==================== */
 
-let secondAndThirdResults;
+let secondAndThirdResults = document.getElementsByClassName('result-2-3');
 
 /* ====================
 Parts 3: Set the variable below equal to a collection of the paragraph
 elements representing the all of the results.
 ==================== */
 
-let allResults;
+let allResults = document.getElementsByClassName('result');
 
 /* ====================
 Part 4: Add an event listener to the button in problem 4 that changes the
 button's own text to "I'm Clicked!"
 ==================== */
 
-let imClickedButton;
+let imClickedButton = document.getElementById("im-clicked-button");
 if (imClickedButton) {
-  imClickedButton.addEventListener('click', () => {});
+  imClickedButton.addEventListener('click', () => {
+    console.log("button pushed");
+    const buttonText = document.getElementById('im-clicked-button');
+    buttonText.textContent = 'I\'m Clicked!';
+  });
 }
-
+//() => {imClickedButton.innerHTML="Success!"}
 /* ====================
 Part 5: Add an event listener to the button in problem 5 that creates a new span
 to the spanContainer. The span should contain a single number representing how
@@ -56,9 +60,16 @@ HINT: You may need some global state for this problem.
 let spanContainer = document.querySelector('#span-container');
 spanContainer.appendChild(htmlToElement('<span>0</span>'));
 
-let addSpanButton;
+let addSpanButton = document.querySelector('#add-span-button');
+window.span = spanContainer;
+let number = 0;
 if (addSpanButton) {
-  addSpanButton.addEventListener('click', () => {});
+  addSpanButton.addEventListener('click', () => {
+    number = number + 1;
+    const newSpan = spanContainer.appendChild(htmlToElement('<span></span>'));
+    newSpan.textContent = number;
+    //console.log(spanContainer.children.length);
+  });
 }
 
 /* =====================
