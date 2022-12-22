@@ -16,30 +16,34 @@ Part 1: Set the variable below equal to the paragraph element representing the
 first test result.
 ==================== */
 
-let firstResult = document.getElementsByClassName('result');
+let firstResult = document.getElementById('result-1');
 
 /* ====================
 Parts 2: Set the variable below equal to a collection of the paragraph
 elements representing the 2nd and 3rd results.
 ==================== */
 
-let secondAndThirdResults = document.getElementsByClassName('result result 2-3');
+let secondAndThirdResults = document.getElementsByClassName('result-2-3');
 
 /* ====================
 Parts 3: Set the variable below equal to a collection of the paragraph
 elements representing the all of the results.
 ==================== */
 
-let allResults = getElementsByClassName('problems');
+let allResults = document.getElementsByClassName('result');
 
 /* ====================
 Part 4: Add an event listener to the button in problem 4 that changes the
 button's own text to "I'm Clicked!"
 ==================== */
 
-let imClickedButton = document.getElementsById("im-clicked-button");
+let imClickedButton = document.getElementById("im-clicked-button");
 if (imClickedButton) {
-  imClickedButton.addEventListener('click', console.log("button pushed"));
+  imClickedButton.addEventListener('click', () => {
+    console.log("button pushed");
+    const buttonText = document.getElementById('im-clicked-button');
+    buttonText.textContent = 'I\'m Clicked!'
+  });
 }
 //() => {imClickedButton.innerHTML="Success!"}
 /* ====================
@@ -56,9 +60,16 @@ HINT: You may need some global state for this problem.
 let spanContainer = document.querySelector('#span-container');
 spanContainer.appendChild(htmlToElement('<span>0</span>'));
 
-let addSpanButton;
+let addSpanButton = document.querySelector('#add-span-button');
+window.span = spanContainer;
+let number = 0;
 if (addSpanButton) {
-  addSpanButton.addEventListener('click', () => {});
+  addSpanButton.addEventListener('click', () => {
+    number = number + 1;
+    const newSpan = spanContainer.appendChild(htmlToElement('<span></span>'));
+    newSpan.textContent = number;
+    //console.log(spanContainer.children.length);
+  });
 }
 
 /* =====================
