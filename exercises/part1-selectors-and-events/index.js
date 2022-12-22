@@ -67,10 +67,10 @@ let spanContainer = document.querySelector('#span-container');
 let addSpanButton = document.getElementById("add-span-button");
 
 function addSpan(){
-let spanContainer = document.querySelector('#span-container');
-spanContainer.appendChild(htmlToElement(`<span>${window.counter}</span>`));
 window.counter = window.counter + 1;
 console.log(window.counter);
+let spanContainer = document.querySelector('#span-container');
+spanContainer.appendChild(htmlToElement(`<span>${window.counter}</span>`));
 }
 
 if (addSpanButton) {
