@@ -66,7 +66,7 @@ let times = 0;
 if (addSpanButton) {
   addSpanButton.addEventListener('click', () => {
     times += 1;
-    addSpanButton.innerHTML = <span>${times}</span>;
+    addSpanButton.innerHTML = `<span>${times}</span>`;
     const span = `
       <span>${times}</span>
     `;
