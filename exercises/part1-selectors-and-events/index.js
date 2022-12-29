@@ -60,7 +60,7 @@ HINT: You may need some global state for this problem.
 let spanContainer = document.querySelector('#span-container');
 spanContainer.appendChild(htmlToElement('<span>0</span>'));
 
-let addSpanButton = querySelector('#add-span-button');
+let addSpanButton = document.querySelector('#add-span-button');
 if (addSpanButton) {
   addSpanButton.addEventListener('click', () => {
     counter = counter + 1;
