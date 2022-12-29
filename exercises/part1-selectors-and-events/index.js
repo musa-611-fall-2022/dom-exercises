@@ -32,7 +32,7 @@ Parts 3: Set the variable below equal to a collection of the paragraph
 elements representing the all of the results.
 ==================== */
 
-let allResults = document.get("result");
+let allResults = document.getElementsByClassName("result");
 window.allResults = allResults;
 
 /* ====================
